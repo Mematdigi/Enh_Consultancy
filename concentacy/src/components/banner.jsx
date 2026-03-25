@@ -1,0 +1,37 @@
+import { Container, Row, Col, Button } from "react-bootstrap";
+
+function Banner() {
+  return (
+    <section className="hero-banner">
+      <Container>
+        <Row className="align-items-center">
+          <Col lg={6} className="banner-text">
+            <h2>
+              <span className="italic-text">Smarter Strategies for a Stronger Future</span>
+             
+            </h2>
+            <p>
+              Your trusted partner in the ever-evolving world of finance and technology. We bring cutting-edge 
+              solutions to empower you on your financial journey.
+            </p>
+            <div className="banner-buttons">
+              <Button variant="warning">Get started</Button>
+              <Button variant="outline-light">Learn more</Button>
+            </div>
+          </Col>
+
+          <Col lg={6} className="banner-images">
+            <div className="image-grid">
+              <img src="./service1.jpg" className="img-one tilt-left" alt="Fintech Image 1" />
+              <img src="./service2.jpg" className="img-two tilt-right" alt="Fintech Image 2" />
+              <img src="./service3.jpg" className="img-three tilt-left" alt="Fintech Image 3" />
+              <img src="./service4.jpg" className="img-four tilt-right" alt="Fintech Image 4" />
+            </div>
+          </Col>
+        </Row>
+      </Container>
+    </section>
+  );
+}
+
+export default Banner;
