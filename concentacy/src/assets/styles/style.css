@@ -1,6 +1,6 @@
 @charset "UTF-8";
 .custom-navbar {
-  background-color: #1c3c2e;
+  background-color: rgb(31, 17, 3);
   padding: 15px 0;
 }
 .custom-navbar .brand-logo {
@@ -39,7 +39,7 @@
 }
 .custom-navbar .nav-buttons .contact-btn:hover {
   background: #fff;
-  color: #1c3c2e;
+  color: #1b0e01;
 }
 
 /* Contact Info */
@@ -68,10 +68,10 @@
 }
 
 .hero-banner {
-  background-color: #1c3c2e;
-  padding: 40px 0;
-  color: #fff;
+  background-color: rgb(255, 244, 225);
+  color: rgb(255, 255, 255);
   text-align: center;
+  padding: 40px 0px;
 }
 .hero-banner .banner-text {
   text-align: left;
@@ -80,6 +80,7 @@
   font-size: 50px;
   font-weight: bold;
   line-height: 1.2;
+  color: rgb(235, 174, 95);
 }
 .hero-banner .banner-text h2 .italic-text {
   font-style: italic;
@@ -87,7 +88,7 @@
 .hero-banner .banner-text p {
   font-size: 18px;
   margin-top: 20px;
-  color: #ccc;
+  color: #855619;
 }
 .hero-banner .banner-text .banner-buttons {
   margin-top: 25px;
@@ -133,7 +134,7 @@
 }
 
 .tailored-section {
-  background: linear-gradient(to right, rgba(0, 51, 32, 0.9) 50%, rgba(0, 51, 32, 0.1) 100%);
+  background: linear-gradient(to right, #1f1103 50%, #fff7e9);
   padding: 80px 0;
   color: #ffffff;
 }
@@ -313,7 +314,7 @@
 /* Container Styling */
 .recruitment-container {
   padding: 50px;
-  background: linear-gradient(to right, rgba(0, 51, 32, 0.9) 50%, rgba(0, 51, 32, 0.1) 100%);
+  background: linear-gradient(to right, #1f1103 50%, #fff7e9);
 }
 
 /* Left Side - Recruitment Steps */
@@ -366,7 +367,7 @@
 
 .reach-link {
   text-decoration: none;
-  color: #007272;
+  color: #d45b08;
   font-weight: bold;
 }
 
@@ -396,7 +397,7 @@
   padding-left: 40px;
   width: 100%;
   border-radius: 5px;
-  border: 1px solid #ccc;
+  border: 1px solid #855619;
   height: 45px;
 }
 
@@ -483,7 +484,7 @@
 }
 
 .about-us {
-  background-color: #eaf8ee;
+  background-color: #fff;
   padding: 80px 0;
 }
 .about-us .about-image img {
@@ -493,7 +494,7 @@
 .about-us .about-text h2 {
   font-size: 50px;
   font-weight: bold;
-  color: #1c3c2e;
+  color: #1b0e01;
   line-height: 1.3;
 }
 .about-us .about-text .italic-text {
@@ -539,7 +540,7 @@
 }
 
 .section-subtitle {
-  color: #007272;
+  color: #d45b08;
   font-weight: bold;
   text-transform: uppercase;
 }
@@ -574,7 +575,7 @@
 /* Icons */
 .info-icon {
   font-size: 40px;
-  color: #007272;
+  color: #d45b08;
   margin-bottom: 15px;
 }
 
@@ -592,7 +593,7 @@
 
 /* Read More Button */
 .read-more-btn {
-  background-color: #007272;
+  background-color: #d45b08;
   color: white;
   font-size: 14px;
   font-weight: bold;
@@ -610,8 +611,8 @@
 }
 
 .business-section {
-  margin-bottom: 40px;
-  margin-top: 30px;
+  background: #fff7e9;
+  padding: 70px 30px;
 }
 
 /* Event Carousel Section */
@@ -631,9 +632,11 @@
 }
 
 .business-section .section-title {
-  font-size: 28px;
-  font-weight: bold;
+  font-size: 33px;
+  font-weight: 700;
   margin-bottom: 10px;
+  text-transform: capitalize;
+  color: #995b0a;
 }
 
 .section-description {
@@ -669,7 +672,7 @@
 }
 
 .read-more {
-  color: #1c3c2e !important;
+  color: #1b0e01 !important;
   font-weight: 600 !important;
   text-decoration: none !important;
   font-size: 16px !important;
@@ -745,7 +748,7 @@
 /* CTA Section */
 .cta-section {
   padding: 60px 0;
-  background: #eaf8ee;
+  background: #fff;
 }
 
 /* CTA Text Styling */
@@ -778,7 +781,7 @@
 .cta-form .input-field {
   flex: 1;
   padding: 10px !important;
-  border: 1px solid #ccc;
+  border: 1px solid #855619;
   border-radius: 5px;
 }
 
@@ -795,7 +798,7 @@
 }
 
 .cta-btn:hover {
-  background: #1c3c2e !important;
+  background: #1b0e01 !important;
 }
 
 /* Contact Section */
@@ -846,7 +849,7 @@
 
 /* Submit Button */
 .contact-form-card .submit-btn {
-  background: #1c3c2e;
+  background: #1b0e01;
   border: none;
   padding: 12px;
   font-size: 16px;
@@ -856,7 +859,7 @@
 }
 
 .contact-form-card .submit-btn:hover {
-  background: #1c3c2e;
+  background: #1b0e01;
 }
 
 /* Contact Info Card */
@@ -903,7 +906,7 @@
 
 .services {
   padding: 80px 0;
-  background-color: #fff;
+  background-color: #fff7e9;
 }
 .services .section-title {
   text-align: left;
@@ -928,7 +931,7 @@
 .services .service-card h5 {
   font-size: 20px;
   font-weight: bold;
-  color: #1c3c2e;
+  color: #1b0e01;
 }
 .services .service-card p {
   font-size: 14px;
@@ -955,7 +958,7 @@
   align-items: center;
   justify-content: center;
   margin-top: 10px;
-  color: #007272;
+  color: #d45b08;
   font-weight: bold;
   text-decoration: none;
 }
@@ -974,7 +977,7 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
-  background: #eaf8ee;
+  background: #fff;
   padding: 10px;
   border-radius: 5px;
   margin-top: 50px;
@@ -992,7 +995,7 @@
 }
 
 .download-btn {
-  background: #1c3c2e !important;
+  background: #1b0e01 !important;
   color: #ffffff !important;
 }
 
@@ -1103,7 +1106,7 @@
 }
 
 .custom-footer {
-  background-color: #1c3c2e;
+  background-color: #1b0e01;
   padding: 60px 0;
   color: #fff;
   text-align: center;
@@ -1146,7 +1149,7 @@
   margin-bottom: 6px;
 }
 .custom-footer .footer-links ul li a {
-  color: #ccc;
+  color: #855619;
   text-decoration: none;
   transition: color 0.3s ease-in-out;
 }
@@ -1199,7 +1202,7 @@
 .custom-footer .footer-bottom {
   margin-top: 30px;
   font-size: 14px;
-  color: #ccc;
+  color: #855619;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1320,7 +1323,7 @@
 
 /* Investment Cards */
 .investment-card {
-  background: #1c3c2e !important;
+  background: #1b0e01 !important;
   color: white !important;
   text-align: center;
   border-radius: 10px !important;
@@ -1483,7 +1486,7 @@
 }
 
 .it-consultant .progress-value {
-  background: #1c3c2e;
+  background: #1b0e01;
   color: white;
   padding: 3px 8px;
   border-radius: 3px;
@@ -1592,7 +1595,7 @@
 }
 
 .it-services .service-card .btn:hover {
-  background-color: #1c3c2e;
+  background-color: #1b0e01;
   color: #ffffff;
   border: 1px solid #ffffff;
 }

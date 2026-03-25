@@ -1,4 +1,4 @@
-import "./assets/styles/style.css";  // Import the CSS file
+import "./assets/styles/style.scss";  // Import the CSS file
 import "bootstrap/dist/css/bootstrap.min.css";  // Bootstrap CSS
 import "bootstrap/dist/js/bootstrap.bundle.min";  // Bootstrap JS
 
@@ -14,23 +14,24 @@ import Property_Consulting from "./pages/Property_Consulting";
 import Business_Consultancy from "./pages/Business_Consultancy";
 
 import Contact from "./pages/Contact";
+import Team from "./pages/Team";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 
 function App() {
   return (
     <Router>
-      <Header />
+      <Header/>
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Home />}/>
         <Route path="/about" element={<About />} />
         <Route path="/services" element={<Services />} />
+        <Route path="/team" element={<Team />} />
         <Route path="/finance_consulting" element={<Finance_Consulting />} />
         <Route path="/digital_marketing_consulting" element={<Digital_Marketing_Consulting />} />
         <Route path="/it_consulting" element={<IT_Consulting />} />
         <Route path="/property_consulting" element={<Property_Consulting />} />
         <Route path="/business_consultancy" element={<Business_Consultancy />} />
-
         <Route path="/contact" element={<Contact />} />
       </Routes>
       <Footer />
