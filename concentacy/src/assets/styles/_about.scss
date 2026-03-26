@@ -144,7 +144,7 @@
 }
 /* Event Carousel Section */
 .event-carousel {
-  background-color:#fbfbfb;
+  background-color:#fdfcf7;
   padding: 60px 0;
   color: white;
   text-align: center;
@@ -183,7 +183,7 @@
 }
 
 .event-card-content {
-  background-color: #2b2c34;
+  background-color: #fee2bf !important;
   padding: 20px;
   border-radius: 10px;
   text-align: center;
@@ -211,6 +211,7 @@
 
 /* Card Title */
 .card-title {
+  color: #995b0a!important ;
   font-size: 18px;
   font-weight: bold;
   margin-bottom: 8px;
@@ -328,3 +329,16 @@
 .cta-btn:hover {
   background: #1b0e01 !important;
 }
+
+        .stats {
+          h3 {
+            font-size:40px;
+            font-weight: bold;
+            color: rgb(235, 174, 95);
+          }
+  
+          p {
+            font-size: 14px;
+            color: rgb(133, 86, 25);
+          }
+        }

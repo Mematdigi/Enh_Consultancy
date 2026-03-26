@@ -105,7 +105,7 @@
   width: 100%;
   height: auto;
   border-radius: 12px;
-  transition: transform 0.3s ease-in-out;
+  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 .hero-banner .banner-images .tilt-left {
   transform: rotate(-8deg);
@@ -191,7 +191,7 @@
   position: relative;
   overflow: hidden;
   border-radius: 8px;
-  transition: transform 0.3s ease;
+  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 .showcases .showcase-card img {
   width: 100%;
@@ -211,7 +211,8 @@
   font-size: 14px;
 }
 .showcases .showcase-card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
 }
 
 .testimonial-section {
@@ -634,7 +635,7 @@ button.learn-more:hover {
 
 /* Event Carousel Section */
 .event-carousel {
-  background-color: #fbfbfb;
+  background-color: #fdfcf7;
   padding: 60px 0;
   color: white;
   text-align: center;
@@ -674,7 +675,7 @@ button.learn-more:hover {
 }
 
 .event-card-content {
-  background-color: #2b2c34;
+  background-color: #fee2bf !important;
   padding: 20px;
   border-radius: 10px;
   text-align: center;
@@ -703,6 +704,7 @@ button.learn-more:hover {
 
 /* Card Title */
 .card-title {
+  color: #995b0a !important;
   font-size: 18px;
   font-weight: bold;
   margin-bottom: 8px;
@@ -816,6 +818,16 @@ button.learn-more:hover {
 
 .cta-btn:hover {
   background: #1b0e01 !important;
+}
+
+.stats h3 {
+  font-size: 40px;
+  font-weight: bold;
+  color: rgb(235, 174, 95);
+}
+.stats p {
+  font-size: 14px;
+  color: rgb(133, 86, 25);
 }
 
 /* Contact Section */
@@ -936,7 +948,7 @@ button.learn-more:hover {
   background: #f9f8f3;
   padding: 20px;
   border-radius: 10px;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   text-align: left;
   height: 100%;
 }
@@ -955,8 +967,8 @@ button.learn-more:hover {
   color: #995b0a;
 }
 .services .service-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
 }
 
 /* Learn More Link */
@@ -1444,9 +1456,9 @@ button.learn-more:hover {
 }
 
 .services-work-section .step-number {
-  color: rgb(235, 174, 95);
-  font-size: 16px;
-  font-weight: bold;
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
 }
 
 /* Step Content */
@@ -2159,7 +2171,7 @@ button.learn-more:hover {
 
 .section-description {
   font-size: 16px;
-  color: #666;
+  color: #955619;
 }
 
 /* ✅ Services List */
@@ -2189,4 +2201,108 @@ button.learn-more:hover {
 .service-description {
   font-size: 14px;
   color: #555;
+}
+
+/* Global Animations Keyframes */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes bounceHover {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+/* Scroll-triggered classes (for CSS fallback) */
+.fade-in-up {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+.delay-1 {
+  animation-delay: 0.1s;
+}
+
+.delay-2 {
+  animation-delay: 0.2s;
+}
+
+.delay-3 {
+  animation-delay: 0.3s;
+}
+
+.stagger-children > * {
+  opacity: 0;
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+.stagger-children > *:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.stagger-children > *:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.stagger-children > *:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+.stagger-children > *:nth-child(4) {
+  animation-delay: 0.4s;
+}
+
+.stagger-children > *:nth-child(5) {
+  animation-delay: 0.5s;
+}
+
+.stagger-children > *:nth-child(6) {
+  animation-delay: 0.6s;
+}
+
+/* Smooth hover enhancements */
+.hover-lift {
+  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.hover-lift:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15) !important;
+}
+
+.icon-spin {
+  transition: transform 0.3s ease;
+}
+
+.icon-spin:hover {
+  transform: rotate(360deg) scale(1.1);
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
 }/*# sourceMappingURL=style.css.map */
