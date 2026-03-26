@@ -6,7 +6,7 @@
       text-align: left;
       font-size: 32px;
       font-weight: bold;
-      color: #204020;
+      color: #995b0a;
       margin-bottom: 40px;
     }
   
@@ -20,37 +20,23 @@
   
       .service-icon {
         font-size: 36px;
-        color: #ff6600;
+        color: rgb(235, 174, 95);;
         margin-bottom: 10px;
       }
-  
-      h5 {
+
+      .card-title-service {
         font-size: 20px;
         font-weight: bold;
-        color: #1b0e01;
+        color: #995b0a;
       }
-  
-      p {
+      .card-description-service {
         font-size: 14px;
-        color: #4a4a4a;
+        color: #995b0a;
       }
   
       &:hover {
         transform: translateY(-5px);
         box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-      }
-    }
-  
-    .discover-btn {
-      background-color: #d45b08;
-      border: none;
-      padding: 12px 20px;
-      font-weight: bold;
-      border-radius: 8px;
-      color: white;
-  
-      &:hover {
-        background-color: #b84a06;
       }
     }
   }
@@ -65,7 +51,7 @@
 }
 
 .service-link:hover {
-  color:#ff6600;
+  color:rgb(235, 174, 95);;
 }
 
 /* Arrow Icon */

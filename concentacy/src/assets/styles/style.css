@@ -10,7 +10,7 @@
   text-decoration: none;
 }
 .custom-navbar .brand-logo .highlight {
-  color: #ff6600;
+  color: rgb(235, 174, 95);
 }
 .custom-navbar .nav-link {
   color: #fff;
@@ -19,7 +19,7 @@
   transition: color 0.3s ease-in-out;
 }
 .custom-navbar .nav-link:hover {
-  color: #ff6600;
+  color: rgb(235, 174, 95);
 }
 .custom-navbar .nav-buttons {
   display: flex;
@@ -28,7 +28,7 @@
 }
 .custom-navbar .nav-buttons .cart-icon {
   font-size: 18px;
-  color: #ff6600;
+  color: rgb(235, 174, 95);
   cursor: pointer;
 }
 .custom-navbar .nav-buttons .contact-btn {
@@ -63,7 +63,7 @@
 }
 
 .contact-icon {
-  color: #ff6600;
+  color: rgb(235, 174, 95);
   font-size: 16px;
 }
 
@@ -93,22 +93,6 @@
 .hero-banner .banner-text .banner-buttons {
   margin-top: 25px;
 }
-.hero-banner .banner-text .banner-buttons .btn-warning {
-  background: #ff6600;
-  border: none;
-  padding: 12px 20px;
-  font-weight: bold;
-  border-radius: 5px;
-}
-.hero-banner .banner-text .banner-buttons .btn-warning:hover {
-  background: #e55b00;
-}
-.hero-banner .banner-text .banner-buttons .btn-outline-light {
-  margin-left: 15px;
-  padding: 12px 20px;
-  font-weight: bold;
-  border-radius: 5px;
-}
 .hero-banner .banner-images .image-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -136,13 +120,12 @@
 .tailored-section {
   background: linear-gradient(to right, #1f1103 50%, #fff7e9);
   padding: 80px 0;
-  color: #ffffff;
 }
 .tailored-section .text-content {
   padding: 50px;
-  color: white;
 }
 .tailored-section .text-content h2 {
+  color: #ffd399;
   font-size: 42px;
   font-weight: bold;
 }
@@ -152,24 +135,13 @@
 .tailored-section .text-content .underline {
   width: 80px;
   height: 3px;
-  background-color: #ff6600;
+  background-color: rgb(235, 174, 95);
   margin: 15px 0;
 }
 .tailored-section .text-content p {
   font-size: 16px;
   line-height: 1.6;
-}
-.tailored-section .text-content .learn-btn {
-  background-color: #d45b08;
-  border: none;
-  padding: 12px 20px;
-  font-weight: bold;
-  border-radius: 8px;
-  color: white;
-  margin-top: 20px;
-}
-.tailored-section .text-content .learn-btn:hover {
-  background-color: #b84a06;
+  color: #fff;
 }
 .tailored-section .image-content {
   display: flex;
@@ -188,7 +160,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: #ff6600;
+  background-color: rgb(235, 174, 95);
   color: white;
   width: 60px;
   height: 60px;
@@ -213,18 +185,7 @@
 .showcases .section-title {
   font-size: 34px;
   font-weight: bold;
-  color: #1b3b2d;
-}
-.showcases .discover-btn {
-  background-color: #d45b08;
-  border: none;
-  padding: 12px 20px;
-  font-weight: bold;
-  border-radius: 8px;
-  color: white;
-}
-.showcases .discover-btn:hover {
-  background-color: #b84a06;
+  color: #995b0a;
 }
 .showcases .showcase-card {
   position: relative;
@@ -243,7 +204,7 @@
 .showcases .showcase-card .showcase-text h4 {
   font-size: 20px;
   font-weight: bold;
-  color: #1b3b2d;
+  color: #995b0a;
 }
 .showcases .showcase-card .showcase-text .category {
   color: #d45b08;
@@ -259,7 +220,7 @@
   padding: 60px 0;
 }
 .testimonial-section .testimonial-header {
-  color: #1b3b2d;
+  color: #995b0a;
   margin-bottom: 40px;
   font-size: 34px;
   font-weight: bold;
@@ -278,7 +239,7 @@
   text-align: left;
   display: flex;
   align-items: center;
-  border: 2px dotted #ff6600;
+  border: 2px dotted rgb(235, 174, 95);
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
   position: relative;
 }
@@ -328,6 +289,7 @@
 }
 
 .main-title {
+  color: rgb(235, 174, 95);
   font-weight: bold;
   font-size: 35px;
 }
@@ -343,6 +305,17 @@
 
 .steps-list li {
   margin-bottom: 15px;
+}
+
+.steps-list li::before {
+  content: "✓";
+  color: rgb(235, 174, 95);
+  margin-right: 10px;
+}
+
+.steps-list strong {
+  color: rgb(235, 174, 95);
+  margin-right: 10px;
 }
 
 .steps-list p {
@@ -388,7 +361,7 @@
   top: 50%;
   left: 15px;
   transform: translateY(-50%);
-  color: #ff6600;
+  color: rgb(235, 174, 95);
 }
 
 .input-icon input,
@@ -418,6 +391,50 @@
 
 .send-btn:hover {
   background-color: #005f5f;
+}
+
+/* Get Started button */
+button.get-started {
+  background-color: rgb(235, 174, 95); /* Orange background */
+  color: white;
+  border-color: rgb(235, 174, 95);
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+button.get-started:hover {
+  background-color: transparent; /* Darker orange on hover */
+  border-color: rgb(235, 174, 95);
+  color: rgb(235, 174, 95);
+}
+
+/* Learn More button */
+button.learn-more {
+  background-color: transparent; /* No background */
+  color: rgb(235, 174, 95); /* Orange text */
+  border-color: rgb(235, 174, 95);
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+button.learn-more:hover {
+  background-color: rgb(235, 174, 95); /* Orange background on hover */
+  color: white;
+  border-color: rgb(235, 174, 95);
+  text-decoration: none;
+}
+
+.card-title-home {
+  font-size: 20px;
+  font-weight: 700 !important;
+  color: #995b0a !important;
+}
+
+.card-description-home {
+  font-size: 14px;
+  color: #995b0a !important;
 }
 
 /* Banner Container */
@@ -494,7 +511,7 @@
 .about-us .about-text h2 {
   font-size: 50px;
   font-weight: bold;
-  color: #1b0e01;
+  color: rgb(235, 174, 95);
   line-height: 1.3;
 }
 .about-us .about-text .italic-text {
@@ -503,12 +520,12 @@
 .about-us .about-text .underline {
   width: 60px;
   height: 3px;
-  background-color: #ff6600;
+  background-color: rgb(235, 174, 95);
   margin: 10px 0 20px;
 }
 .about-us .about-text p {
   font-size: 16px;
-  color: #4a4a4a;
+  color: rgb(133, 86, 25);
   line-height: 1.5;
   margin-bottom: 20px;
 }
@@ -526,11 +543,11 @@
 .about-us .about-text .stats .stat-item h3 {
   font-size: 40px;
   font-weight: bold;
-  color: #ff6600;
+  color: rgb(235, 174, 95);
 }
 .about-us .about-text .stats .stat-item p {
   font-size: 14px;
-  color: #666;
+  color: rgb(133, 86, 25);
 }
 
 /* Business Values Section */
@@ -647,7 +664,7 @@
 
 /* Event Cards */
 .event-carousel .section-title {
-  color: #ff6600 !important;
+  color: rgb(235, 174, 95) !important;
 }
 
 .event-card {
@@ -667,7 +684,7 @@
 }
 
 .event-card-content:hover {
-  background-color: #ff6600 !important;
+  background-color: rgb(235, 174, 95) !important;
   color: #ffffff;
 }
 
@@ -787,7 +804,7 @@
 
 /* CTA Button */
 .cta-btn {
-  background: #ff6600 !important;
+  background: rgb(235, 174, 95) !important;
   color: white !important;
   border: none !important;
   padding: 10px 20px !important;
@@ -821,7 +838,7 @@
 }
 
 .contact-header .badge {
-  background: #ff6600;
+  background: rgb(235, 174, 95);
   color: white;
   padding: 10px 12px;
   border-radius: 4px;
@@ -886,7 +903,7 @@
 
 .info-icon {
   background: #eaf6f2;
-  color: #ff6600;
+  color: rgb(235, 174, 95);
   font-size: 70px;
   padding: 15px;
   border-radius: 50%;
@@ -912,7 +929,7 @@
   text-align: left;
   font-size: 32px;
   font-weight: bold;
-  color: #204020;
+  color: #995b0a;
   margin-bottom: 40px;
 }
 .services .service-card {
@@ -925,32 +942,21 @@
 }
 .services .service-card .service-icon {
   font-size: 36px;
-  color: #ff6600;
+  color: rgb(235, 174, 95);
   margin-bottom: 10px;
 }
-.services .service-card h5 {
+.services .service-card .card-title-service {
   font-size: 20px;
   font-weight: bold;
-  color: #1b0e01;
+  color: #995b0a;
 }
-.services .service-card p {
+.services .service-card .card-description-service {
   font-size: 14px;
-  color: #4a4a4a;
+  color: #995b0a;
 }
 .services .service-card:hover {
   transform: translateY(-5px);
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-}
-.services .discover-btn {
-  background-color: #d45b08;
-  border: none;
-  padding: 12px 20px;
-  font-weight: bold;
-  border-radius: 8px;
-  color: white;
-}
-.services .discover-btn:hover {
-  background-color: #b84a06;
 }
 
 /* Learn More Link */
@@ -964,7 +970,7 @@
 }
 
 .service-link:hover {
-  color: #ff6600;
+  color: rgb(235, 174, 95);
 }
 
 /* Arrow Icon */
@@ -1000,7 +1006,7 @@
 }
 
 .appointment-btn {
-  background-color: #ff6600 !important;
+  background-color: rgb(235, 174, 95) !important;
   color: #ffffff;
 }
 
@@ -1041,7 +1047,7 @@
 }
 
 .service-item:hover {
-  color: #ff6600;
+  color: rgb(235, 174, 95);
 }
 
 .arrow-icon {
@@ -1108,7 +1114,6 @@
 .custom-footer {
   background-color: #1b0e01;
   padding: 60px 0;
-  color: #fff;
   text-align: center;
 }
 .custom-footer .footer-logo {
@@ -1121,12 +1126,12 @@
   color: #fff;
 }
 .custom-footer .footer-logo h2 .highlight {
-  color: #ff6600;
+  color: rgb(235, 174, 95);
 }
 .custom-footer .footer-logo .footer-divider {
   width: 80%;
   height: 2px;
-  background-color: #ff6600;
+  background-color: rgb(235, 174, 95);
   margin: 10px auto;
 }
 .custom-footer .footer-content {
@@ -1139,6 +1144,12 @@
   font-size: 18px;
   font-weight: bold;
   margin-bottom: 10px;
+  color: #ffdcae;
+}
+.custom-footer .footer-links p {
+  font-size: 14px;
+  color: #ccc;
+  margin-bottom: 20px;
 }
 .custom-footer .footer-links ul {
   list-style: none;
@@ -1149,12 +1160,12 @@
   margin-bottom: 6px;
 }
 .custom-footer .footer-links ul li a {
-  color: #855619;
   text-decoration: none;
+  color: #ccc;
   transition: color 0.3s ease-in-out;
 }
 .custom-footer .footer-links ul li a:hover {
-  color: #ffcc00;
+  color: #855619;
 }
 .custom-footer .subscribe-section {
   text-align: left;
@@ -1163,6 +1174,7 @@
   font-size: 18px;
   font-weight: bold;
   margin-bottom: 10px;
+  color: #ffdcae;
 }
 .custom-footer .subscribe-section .form-control {
   border-radius: 8px;
@@ -1173,7 +1185,7 @@
   background: #fff;
 }
 .custom-footer .subscribe-section .subscribe-btn {
-  background: #ff6600;
+  background: rgb(235, 174, 95);
   border: none;
   padding: 10px 20px;
   font-weight: bold;
@@ -1187,6 +1199,7 @@
 .custom-footer .social-icons {
   display: flex;
   justify-content: center;
+  color: #fff;
   gap: 20px;
   font-size: 20px;
   margin-top: 20px;
@@ -1208,12 +1221,39 @@
   align-items: center;
   flex-wrap: wrap;
 }
+.custom-footer .footer-bottom p {
+  margin: 0;
+  color: #fff;
+}
 .custom-footer .footer-bottom a {
   color: #ffcc00;
   text-decoration: none;
 }
 .custom-footer .footer-bottom a:hover {
   text-decoration: underline;
+}
+
+/* Container for the footer logo */
+.footer-logo {
+  text-align: center; /* Centers the logo */
+  margin-bottom: 30px; /* Adds space below the footer logo */
+}
+
+/* Footer logo image styling */
+.footer-logo-img {
+  max-width: 100%; /* Ensures logo doesn't exceed the container width */
+  width: 200px; /* Set the specific width */
+  height: 40px; /* Set the specific height */
+  margin-bottom: 20px; /* Adds spacing below the logo */
+  border-radius: 8px; /* Optional: rounded corners for logo */
+}
+
+/* Footer divider styling */
+.footer-divider {
+  width: 100%; /* Makes the divider full width */
+  height: 2px; /* Sets the height of the divider */
+  background-color: #fca311; /* Divider color */
+  margin-top: 20px; /* Adds space above the divider */
 }
 
 /* Banner Image */
@@ -1254,7 +1294,7 @@
 }
 
 .highlight {
-  color: #ff6600;
+  color: rgb(235, 174, 95);
 }
 
 /* Section Description */
@@ -1278,7 +1318,7 @@
 }
 
 .feature-icon {
-  background: #ff6600;
+  background: rgb(235, 174, 95);
   color: white;
   font-size: 20px;
   padding: 12px;
@@ -1307,7 +1347,7 @@
 }
 
 .download-btn {
-  background: #ff6600;
+  background: rgb(235, 174, 95);
   border: none;
   padding: 10px 20px;
   font-weight: bold;
@@ -1348,27 +1388,16 @@
   position: relative;
 }
 
-.learn-more {
-  color: #ff6600;
-  font-weight: bold;
-  font-size: 14px;
-  text-decoration: none;
-}
-
-.learn-more:hover {
-  text-decoration: underline;
-}
-
 /* Services Work Section */
 .services-work-section {
   padding: 60px 0;
-  background: rgba(255, 102, 0, 0.0509803922);
+  background: rgb(235, 174, 95);
   text-align: center;
 }
 
 /* Section Header */
 .services-work-section .section-subtitle {
-  color: #ff6600;
+  color: rgb(235, 174, 95);
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -1400,14 +1429,14 @@
 .services-work-section .step-header {
   display: flex;
   align-items: center;
-  background: rgba(255, 102, 0, 0.0901960784);
+  background: rgb(235, 174, 95);
   border-radius: 10px;
   padding: 10px;
   justify-content: space-between;
 }
 
 .services-work-section .step-icon {
-  background: #ff6600;
+  background: rgb(235, 174, 95);
   color: white;
   font-size: 24px;
   padding: 15px;
@@ -1415,7 +1444,7 @@
 }
 
 .services-work-section .step-number {
-  color: #ff6600;
+  color: rgb(235, 174, 95);
   font-size: 16px;
   font-weight: bold;
 }
@@ -1445,7 +1474,7 @@
 
 /* ✅ Subtitle */
 .it-consultant .section-subtitle {
-  color: #ff6600;
+  color: rgb(235, 174, 95);
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -1494,7 +1523,7 @@
 }
 
 .it-consultant .custom-progress-bar .progress-bar {
-  background-color: #ff6600 !important;
+  background-color: rgb(235, 174, 95) !important;
   border-radius: 5px;
 }
 
@@ -1559,7 +1588,7 @@
 .it-services .underline {
   width: 50px;
   height: 3px;
-  background-color: #ff6600;
+  background-color: rgb(235, 174, 95);
   margin: 10px auto;
 }
 
@@ -1582,7 +1611,7 @@
 /* ✅ Service Icon */
 .it-services .service-icon {
   font-size: 50px;
-  color: #ff6600;
+  color: rgb(235, 174, 95);
   margin-bottom: 15px;
 }
 
@@ -1590,8 +1619,8 @@
 .it-services .service-card .btn {
   border-radius: 20px;
   font-weight: bold;
-  border: 1px solid #ff6600;
-  color: #ff6600;
+  border: 1px solid rgb(235, 174, 95);
+  color: rgb(235, 174, 95);
 }
 
 .it-services .service-card .btn:hover {
@@ -1708,7 +1737,7 @@
   align-items: center;
   font-size: 25px;
   font-weight: bold;
-  color: #ff6600;
+  color: rgb(235, 174, 95);
   background: #ffffff;
 }
 
@@ -1738,7 +1767,7 @@
 .digital-marketing .section-title .highlight {
   width: 50px;
   height: 3px;
-  background-color: #ff6600;
+  background-color: rgb(235, 174, 95);
   display: block;
   position: absolute;
   top: -5px;
@@ -1746,7 +1775,7 @@
 }
 
 .digital-marketing .section-title .highlight-text {
-  color: #ff6600;
+  color: rgb(235, 174, 95);
 }
 
 .digital-marketing .section-description {
@@ -1769,7 +1798,7 @@
 }
 
 .digital-marketing .check-icon {
-  color: #ff6600;
+  color: rgb(235, 174, 95);
   margin-right: 10px;
   font-size: 18px;
 }
@@ -1793,7 +1822,7 @@
 .digital-marketing .section-title .highlight {
   width: 50px;
   height: 3px;
-  background-color: #ff6600;
+  background-color: rgb(235, 174, 95);
   display: block;
   position: absolute;
   top: -5px;
@@ -1801,7 +1830,7 @@
 }
 
 .digital-marketing .section-title .highlight-text {
-  color: #ff6600;
+  color: rgb(235, 174, 95);
 }
 
 .digital-marketing .section-description {
@@ -1824,7 +1853,7 @@
 }
 
 .digital-marketing .check-icon {
-  color: #ff6600;
+  color: rgb(235, 174, 95);
   margin-right: 10px;
   font-size: 18px;
 }
@@ -1883,9 +1912,9 @@
 }
 
 .support-tabs .nav-link.active {
-  background-color: #ff6600 !important;
+  background-color: rgb(235, 174, 95) !important;
   color: #fff !important;
-  border-bottom: 2px solid #ff6600 !important;
+  border-bottom: 2px solid rgb(235, 174, 95) !important;
 }
 
 .support-content {

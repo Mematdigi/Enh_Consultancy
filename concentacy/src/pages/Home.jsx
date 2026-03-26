@@ -19,7 +19,7 @@ function Services() {
       <Container>
         <div className="section-header d-flex justify-content-between align-items-center">
           <h2 className="section-title">Our Services</h2>
-          <Button variant="warning" className="discover-btn">Discover more</Button>
+          <Button variant="warning" className="get-started">Discover more</Button>
         </div>
         <Row>
           {serviceList.map((service, index) => (
@@ -27,8 +27,8 @@ function Services() {
               <Card className="service-card">
                 <div className="service-icon">{service.icon}</div>
                 <Card.Body>
-                  <Card.Title>{service.title}</Card.Title>
-                  <Card.Text>{service.description}</Card.Text>
+                  <Card.Title className="card-title-home">{service.title}</Card.Title>
+                  <Card.Text className="card-description-service">{service.description}</Card.Text>
                    {/* Clickable Link Inside Card */}
                   <Link to={service.link} className="service-link">
                     Learn More <FaArrowRight className="arrow-icon" />
@@ -59,7 +59,7 @@ function TailoredSection() {
               Ready to embrace a future where finance meets technology? Join us today and experience the next level of financial innovation.
               Whether you're a savvy investor, a digital payment enthusiast, or someone looking for personalized financial solutions, we have something for you.
             </p>
-            <Button variant="warning" className="learn-btn">Learn more</Button>
+            <Button variant="warning" className="learn-more">Learn more</Button>
           </Col>
 
           <Col lg={6} className="image-content">
@@ -93,7 +93,7 @@ function Showcases() {
       <Container>
         <div className="section-header d-flex justify-content-between align-items-center">
           <h2 className="section-title">Our Consulting Showcases</h2>
-          <Button variant="warning" className="discover-btn">Discover more</Button>
+          <Button variant="warning" className="get-started">Discover more</Button>
         </div>
         <Row>
           {showcaseItems.map((item, index) => (

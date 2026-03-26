@@ -9,7 +9,7 @@
     text-decoration: none;
 
     .highlight {
-      color: #ff6600;
+      color: rgb(235, 174, 95);;
     }
   }
 
@@ -20,7 +20,7 @@
     transition: color 0.3s ease-in-out;
 
     &:hover {
-      color: #ff6600;
+      color: rgb(235, 174, 95);;
     }
   }
 
@@ -31,7 +31,7 @@
 
     .cart-icon {
       font-size: 18px;
-      color: #ff6600;
+      color: rgb(235, 174, 95);;
       cursor: pointer;
     }
 
@@ -69,6 +69,6 @@
 }
 
 .contact-icon {
-  color: #ff6600;
+  color: rgb(235, 174, 95);;
   font-size: 16px;
 }

@@ -31,8 +31,8 @@ function Services() {
                 <Card className="service-card">
                   <div className="service-icon">{service.icon}</div>
                   <Card.Body>
-                    <Card.Title>{service.title}</Card.Title>
-                    <Card.Text>{service.description}</Card.Text>
+                    <Card.Title className="card-title-service">{service.title}</Card.Title>
+                    <Card.Text className="card-description-service">{service.description}</Card.Text>
                     {/* Clickable Link Inside Card */}
                     <Link to={service.link} className="service-link">
                       Learn More <FaArrowRight className="arrow-icon" />

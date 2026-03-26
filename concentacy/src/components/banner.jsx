@@ -15,8 +15,8 @@ function Banner() {
               solutions to empower you on your financial journey.
             </p>
             <div className="banner-buttons">
-              <Button variant="warning">Get started</Button>
-              <Button variant="outline-light">Learn more</Button>
+              <Button className="btn get-started m-2">Get started</Button>
+              <Button className="btn learn-more m-2">Learn more</Button>
             </div>
           </Col>
 
