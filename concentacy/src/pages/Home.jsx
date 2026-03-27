@@ -2,6 +2,8 @@ import Banner from "../components/Banner";
 import { Container, Row, Col, Card, Button, Form } from "react-bootstrap";
 import { FaArrowRight, FaLightbulb, FaBriefcase, FaGraduationCap, FaLaptopCode, FaWallet, FaBullseye, FaPlay, FaQuoteLeft,FaUser,FaEnvelope,FaPhone,FaEdit,FaComments,FaList } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import { motion } from 'framer-motion';
+import AnimationWrapper from '../animations/AnimationWrapper';
 
 // ✅ Services Component
 function Services() {
@@ -15,31 +17,40 @@ function Services() {
   ];
 
   return (
-    <section className="services">
-      <Container>
-        <div className="section-header d-flex justify-content-between align-items-center">
-          <h2 className="section-title">Our Services</h2>
-          <Button variant="warning" className="discover-btn">Discover more</Button>
-        </div>
-        <Row>
-          {serviceList.map((service, index) => (
-            <Col lg={4} md={6} key={index} className="mb-4">
-              <Card className="service-card">
-                <div className="service-icon">{service.icon}</div>
-                <Card.Body>
-                  <Card.Title>{service.title}</Card.Title>
-                  <Card.Text>{service.description}</Card.Text>
-                   {/* Clickable Link Inside Card */}
-                  <Link to={service.link} className="service-link">
-                    Learn More <FaArrowRight className="arrow-icon" />
-                  </Link>
-                </Card.Body>
-              </Card>
-            </Col>
-          ))}
-        </Row>
-      </Container>
-    </section>
+    <AnimationWrapper className="stagger-children">
+      <section className="services hover-lift">
+        <Container>
+          <div className="section-header d-flex justify-content-between align-items-center">
+            <motion.h2 
+              className="section-title" 
+              initial={{ opacity: 0, y: -20 }} 
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6 }}
+              viewport={{ once: true }}
+            >Our Services</motion.h2>
+            <Button variant="warning" className="get-started hover-lift">Discover more</Button>
+          </div>
+          <Row>
+            {serviceList.map((service, index) => (
+              <Col lg={4} md={6} key={index} className="mb-4">
+                <motion.div variants={childVariants} className="service-card hover-lift">
+                  <Card className="service-card">
+                    <div className="service-icon icon-spin">{service.icon}</div>
+                    <Card.Body>
+                      <Card.Title className="card-title-home">{service.title}</Card.Title>
+                      <Card.Text className="card-description-service">{service.description}</Card.Text>
+                      <Link to={service.link} className="service-link">
+                        Learn More <FaArrowRight className="arrow-icon" />
+                      </Link>
+                    </Card.Body>
+                  </Card>
+                </motion.div>
+              </Col>
+            ))}
+          </Row>
+        </Container>
+      </section>
+    </AnimationWrapper>
   );
 }
 
@@ -59,7 +70,7 @@ function TailoredSection() {
               Ready to embrace a future where finance meets technology? Join us today and experience the next level of financial innovation.
               Whether you're a savvy investor, a digital payment enthusiast, or someone looking for personalized financial solutions, we have something for you.
             </p>
-            <Button variant="warning" className="learn-btn">Learn more</Button>
+            <Button variant="warning" className="learn-more">Learn more</Button>
           </Col>
 
           <Col lg={6} className="image-content">
@@ -93,7 +104,7 @@ function Showcases() {
       <Container>
         <div className="section-header d-flex justify-content-between align-items-center">
           <h2 className="section-title">Our Consulting Showcases</h2>
-          <Button variant="warning" className="discover-btn">Discover more</Button>
+          <Button variant="warning" className="get-started">Discover more</Button>
         </div>
         <Row>
           {showcaseItems.map((item, index) => (
@@ -181,38 +192,40 @@ function Home() {
       </section>
 
       {/* Sections */}
-      <Services />
-      <Container fluid className="recruitment-container">
-      <Row className="justify-content-center">
-        {/* Left Side - Recruitment Steps */}
-        <Col md={5} className="recruitment-info">
-          <h2 className="main-title">Expert Consulting Solutions</h2>
-          <p className="description">
-          Looking for expert guidance to enhance your business operations, strategy, or technology? Our consulting services are tailored to optimize performance, reduce costs, and drive sustainable growth.
+      <AnimationWrapper>
+        <Container fluid className="recruitment-container hover-lift">
+          <Row className="justify-content-center stagger-children">
+            {/* Left Side - Recruitment Steps */}
+            <Col md={5} className="recruitment-info">
+              <motion.h2 className="main-title" initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 0.6 }}>Expert Consulting Solutions</motion.h2>
+              <motion.p 
+                className="description"
+                initial={{ opacity: 0, x: -20 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.6, delay: 0.2 }}
+              >
+                Looking for expert guidance to enhance your business operations, strategy, or technology? Our consulting services are tailored to optimize performance, reduce costs, and drive sustainable growth.
+              </motion.p>
 
-
-          </p>
-
-          <ul className="steps-list">
-            <li>
-              <strong>Business & Management Consulting</strong>
-              <p>Improve efficiency, leadership, and decision-making to scale your business successfully.</p>
-            </li>
-            <li>
-              <strong>Strategic Growth Consulting</strong>
-              <p>Develop market expansion strategies and competitive positioning to accelerate long-term success.</p>
-            </li>
-            <li>
-              <strong>IT & Digital Transformation Consulting</strong>
-              <p>Implement cutting-edge technology solutions to modernize your business.</p>
-            </li>
-            <li>
-              <strong> Finance & Cost Optimization Consulting</strong>
-              <p>Control expenses, optimize financial strategies, and enhance profitability.</p>
-            </li>
-           
-          </ul>
-        </Col>
+              <ul className="steps-list stagger-children">
+                <li className="hover-lift">
+                  <motion.strong initial={{ x: -20 }} animate={{ x: 0 }} transition={{ delay: 0.4 }} >Business & Management Consulting</motion.strong>
+                  <p>Improve efficiency, leadership, and decision-making to scale your business successfully.</p>
+                </li>
+                <li className="hover-lift">
+                  <motion.strong initial={{ x: -20 }} animate={{ x: 0 }} transition={{ delay: 0.5 }} >Strategic Growth Consulting</motion.strong>
+                  <p>Develop market expansion strategies and competitive positioning to accelerate long-term success.</p>
+                </li>
+                <li className="hover-lift">
+                  <motion.strong initial={{ x: -20 }} animate={{ x: 0 }} transition={{ delay: 0.6 }} >IT & Digital Transformation Consulting</motion.strong>
+                  <p>Implement cutting-edge technology solutions to modernize your business.</p>
+                </li>
+                <li className="hover-lift">
+                  <motion.strong initial={{ x: -20 }} animate={{ x: 0 }} transition={{ delay: 0.7 }} > Finance & Cost Optimization Consulting</motion.strong>
+                  <p>Control expenses, optimize financial strategies, and enhance profitability.</p>
+                </li>
+              </ul>
+            </Col>
 
         {/* Right Side - Consultation Form */}
         <Col md={5} className="form-container">
@@ -286,6 +299,7 @@ function Home() {
         </Col>
       </Row>
     </Container>
+      </AnimationWrapper>
       <Showcases />
       <TailoredSection />
 

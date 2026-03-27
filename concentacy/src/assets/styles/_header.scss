@@ -1,5 +1,5 @@
 .custom-navbar {
-  background-color: #1c3c2e;
+  background-color: rgb(31, 17, 3);
   padding: 15px 0;
 
   .brand-logo {
@@ -9,7 +9,7 @@
     text-decoration: none;
 
     .highlight {
-      color: #ff6600;
+      color: rgb(235, 174, 95);;
     }
   }
 
@@ -20,7 +20,7 @@
     transition: color 0.3s ease-in-out;
 
     &:hover {
-      color: #ff6600;
+      color: rgb(235, 174, 95);;
     }
   }
 
@@ -31,7 +31,7 @@
 
     .cart-icon {
       font-size: 18px;
-      color: #ff6600;
+      color: rgb(235, 174, 95);;
       cursor: pointer;
     }
 
@@ -43,7 +43,7 @@
 
       &:hover {
         background: #fff;
-        color: #1c3c2e;
+        color: #1b0e01;
       }
     }
   }
@@ -69,6 +69,6 @@
 }
 
 .contact-icon {
-  color: #ff6600;
+  color: rgb(235, 174, 95);;
   font-size: 16px;
 }

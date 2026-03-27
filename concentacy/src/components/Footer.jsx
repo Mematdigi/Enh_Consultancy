@@ -1,17 +1,16 @@
 import { Container, Row, Col, Form, Button } from "react-bootstrap";
 import { FaFacebookF, FaInstagram, FaTimes, FaDribbble, FaPinterestP } from "react-icons/fa";
+const ENX_logo = "./ENX_logo.png";
 
 function Footer() {
   return (
     <footer className="custom-footer">
       <Container>
         {/* Logo and Divider */}
-        <div className="footer-logo">
-          <h2>
-          Consultanc<span className="highlight">Y</span>
-          </h2>
-          <div className="footer-divider"></div>
-        </div>
+<div class="footer-logo text-center">
+  <img alt="Consultancy Logo" class="footer-logo-img mb-2 " src={ENX_logo}/>
+  <div class="footer-divider"></div>
+</div>
 
         {/* Footer Content */}
         <Row className="footer-content">
@@ -20,11 +19,11 @@ function Footer() {
             <Row>
               <Col md={6}>
                 <h5>Address</h5>
-               <p>GI-34, First Floor, Lawrence Road, 
+                <p>GI-34, First Floor, Lawrence Road,
                 </p>
                 <p>Delhi-110035</p>
               </Col>
-             
+
               <Col md={3}>
                 <h5>Quick Links</h5>
                 <ul>

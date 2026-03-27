@@ -1,12 +1,12 @@
 .services {
     padding: 80px 0;
-    background-color: #fff;
+    background-color: #fff7e9;
   
     .section-title {
       text-align: left;
       font-size: 32px;
       font-weight: bold;
-      color: #204020;
+      color: #995b0a;
       margin-bottom: 40px;
     }
   
@@ -14,43 +14,29 @@
       background: #f9f8f3;
       padding: 20px;
       border-radius: 10px;
-      transition: all 0.3s ease-in-out;
+      transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
       text-align: left;
       height: 100%;
-  
+
       .service-icon {
         font-size: 36px;
-        color: #ff6600;
+        color: rgb(235, 174, 95);
         margin-bottom: 10px;
       }
-  
-      h5 {
+
+      .card-title-service {
         font-size: 20px;
         font-weight: bold;
-        color: #1c3c2e;
+        color: #995b0a;
       }
-  
-      p {
+      .card-description-service {
         font-size: 14px;
-        color: #4a4a4a;
+        color: #995b0a;
       }
-  
+
       &:hover {
-        transform: translateY(-5px);
-        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-      }
-    }
-  
-    .discover-btn {
-      background-color: #d45b08;
-      border: none;
-      padding: 12px 20px;
-      font-weight: bold;
-      border-radius: 8px;
-      color: white;
-  
-      &:hover {
-        background-color: #b84a06;
+        transform: translateY(-10px) scale(1.02);
+        box-shadow: 0 20px 40px rgba(0,0,0,0.15);
       }
     }
   }
@@ -59,13 +45,13 @@
   align-items: center;
   justify-content: center;
   margin-top: 10px;
-  color: #007272;
+  color: #d45b08;
   font-weight: bold;
   text-decoration: none;
 }
 
 .service-link:hover {
-  color:#ff6600;
+  color:rgb(235, 174, 95);;
 }
 
 /* Arrow Icon */

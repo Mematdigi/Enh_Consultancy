@@ -1,3 +1,4 @@
+
 /* Banner Image */
 .banner-image {
     width: 100%;
@@ -37,7 +38,7 @@
 }
 
 .highlight {
-  color: #ff6600;
+  color: rgb(235, 174, 95);;
 }
 
 /* Section Description */
@@ -61,7 +62,7 @@
 }
 
 .feature-icon {
-  background: #ff6600;
+  background: rgb(235, 174, 95);;
   color: white;
   font-size: 20px;
   padding: 12px;
@@ -90,7 +91,7 @@
 }
 
 .download-btn {
-  background: #ff6600;
+  background: rgb(235, 174, 95);;
   border: none;
   padding: 10px 20px;
   font-weight: bold;
@@ -106,7 +107,7 @@
 
 /* Investment Cards */
 .investment-card {
-  background: #1c3c2e !important;
+  background: #1b0e01 !important;
   color: white !important;
   text-align: center;
   border-radius: 10px !important;
@@ -130,29 +131,17 @@
   position: relative;
 }
 
-.learn-more {
-  color: #ff6600;
-  font-weight: bold;
-  font-size: 14px;
-  text-decoration: none;
-}
-
-.learn-more:hover {
-  text-decoration: underline;
-}
-
-
 
  /* Services Work Section */
 .services-work-section {
   padding: 60px 0;
-  background:#ff66000d;
+  background:rgb(235, 174, 95);
   text-align: center;
 }
 
 /* Section Header */
 .services-work-section .section-subtitle {
-  color: #ff6600;
+  color: rgb(235, 174, 95);;
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -184,14 +173,14 @@
 .services-work-section .step-header {
   display: flex;
   align-items: center;
-  background:#ff660017;
+  background:rgb(235, 174, 95);
   border-radius: 10px;
   padding: 10px;
   justify-content: space-between;
 }
 
 .services-work-section .step-icon {
-  background: #ff6600;
+  background: rgb(235, 174, 95);;
   color: white;
   font-size: 24px;
   padding: 15px;
@@ -199,9 +188,9 @@
 }
 
 .services-work-section .step-number {
-  color: #ff6600;
-  font-size: 16px;
-  font-weight: bold;
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
 }
 
 /* Step Content */
