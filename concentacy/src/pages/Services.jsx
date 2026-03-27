@@ -43,7 +43,7 @@ function Services() {
                     transition={{ duration: 0.5 }}
                   >
                     <Card className="service-card">
-                      <div className="service-icon icon-spin">{service.icon}</div>
+                      <div className="service-icon">{service.icon}</div>
                       <Card.Body>
                         <Card.Title className="card-title-service">{service.title}</Card.Title>
                         <Card.Text className="card-description-service">{service.description}</Card.Text>
