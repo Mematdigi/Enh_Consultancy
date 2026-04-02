@@ -1,4 +1,4 @@
-import "./assets/styles/style.css";  // Import the CSS file
+import "./assets/styles/style.scss";  // Import the CSS file
 import "bootstrap/dist/css/bootstrap.min.css";  // Bootstrap CSS
 import "bootstrap/dist/js/bootstrap.bundle.min";  // Bootstrap JS
 
